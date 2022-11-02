@@ -1,0 +1,17 @@
+POST http://localhost:5000/user/signup
+Content-Type: application/json
+
+{
+  "username":"duonghoanganh06",
+  "password":"061220"
+}
+
+###
+
+POST http://localhost:5000/user/signin
+Content-Type: application/json
+
+{
+  "username":"duonghoanganh06",
+  "password":"061220"
+}

@@ -1,0 +1,31 @@
+GET http://localhost:5000/students
+
+###
+
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+  "studentID":"18036561",
+  "fullName":"Duong Hoang Anh",
+  "age":22,
+  "address":"Can Tho",
+  "score": 10
+}
+
+###
+
+PATCH http://localhost:5000/students/6362212f828ae4e80aa3d73c
+Content-Type: application/json
+
+{
+  "studentID":"180_____",
+  "fullName":"Nguyen Thi Minh",
+  "age":22,
+  "address":"Gia Lai",
+  "score": 10
+}
+
+###
+
+DELETE http://localhost:5000/students/6362212f828ae4e80aa3d73c

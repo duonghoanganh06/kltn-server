@@ -1,0 +1,32 @@
+GET http://localhost:5000/students
+
+###
+
+POST http://localhost:5000/students
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImR1b25naG9hbmdhbmgwNiIsImlkIjoiNjM2MjI5NGExN2Q0ZjdjNGVmZDMwZDBiIiwiaWF0IjoxNjY3Mzc4ODc1LCJleHAiOjE2NjczODI0NzV9.GZ6B4_S5pn1HPfUfjXPBRFIoJbAGT9veKIi-wee3ohE
+Content-Type: application/json
+
+{
+  "studentID":"180____1",
+  "fullName":"Anh",
+  "age":22,
+  "address":"Can Tho",
+  "score": 10
+}
+
+###
+
+PATCH http://localhost:5000/students/6362212f828ae4e80aa3d73c
+Content-Type: application/json
+
+{
+  "studentID":"180_____",
+  "fullName":"Nguyen Thi Minh",
+  "age":22,
+  "address":"Gia Lai",
+  "score": 10
+}
+
+###
+
+DELETE http://localhost:5000/students/6362212f828ae4e80aa3d73c
