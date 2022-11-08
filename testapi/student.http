@@ -6,6 +6,7 @@ POST http://localhost:5000/students
 Content-Type: application/json
 
 {
+  "_id": "eee",
   "studentID":"18036561",
   "fullName":"Duong Hoang Anh",
   "age":22,
@@ -15,11 +16,11 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:5000/students/6362212f828ae4e80aa3d73c
+PATCH http://localhost:5000/students/636795d950a9971439b8d6c3
 Content-Type: application/json
 
 {
-  "studentID":"180_____",
+  "studentID":"184545",
   "fullName":"Nguyen Thi Minh",
   "age":22,
   "address":"Gia Lai",
@@ -28,4 +29,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5000/students/6362212f828ae4e80aa3d73c
+DELETE http://localhost:5000/students/63677ddb50a9971439b87d18

@@ -11,6 +11,16 @@ export const getStudents = async (req, res) => {
   }
 }
 
+export const getStudent = async (req, res) => {
+  try {
+    const studentMessages = await StudentMessage.findById(req.params.id)
+
+    res.status(200).json(studentMessages);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+}
+
 export const createStudent = async (req, res) => {
   const student = req.body
 
